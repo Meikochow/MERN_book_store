@@ -1,0 +1,51 @@
+.Card{
+    // border:2px solid blue;
+    box-shadow:0px 0px 4px black;
+    width:250px;
+    // height:340px;
+    height:auto;
+    margin:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color:#4d4d4d;
+    .cardImage{
+        height:250px;
+        margin:auto;
+    }
+    .detailsContainer{
+        height:220px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .titleText{
+            font-size:18px;
+            font-family:'Playfair Display';
+            border-style:solid;
+            border-color:grey;
+            border-width:0px 0px 1px 0px;
+        }
+        .authorText{
+            font-family:'Noto Serif';
+        }
+        .price{
+        }
+        .description{
+        }
+    }
+    .addToCart{
+        height:40px;
+        background:white;
+        border-style:solid;
+        border-color:grey;
+        border-width:1px 0px 0px 0px;
+        outline:none;
+        font-family:'Playfair Display';
+        font-size:22px;
+    }
+    .addToCart:hover{
+        text-decoration: underline;
+        background:black;
+        color:white;
+    }
+}

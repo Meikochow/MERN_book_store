@@ -1,0 +1,10 @@
+.CardContainer{
+    // border:3px solid salmon;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px 0px 0px;
+    .loading{
+        font-size:40px;
+    }
+}

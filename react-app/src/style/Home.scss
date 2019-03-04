@@ -1,0 +1,40 @@
+.Home{
+    // border:2px dotted blue;
+    .HomeNavigation{
+        // border:1px solid red;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:30px;
+        .navButton{
+            width:15%;
+            max-width:140px;
+            height:30px;
+            background-color:white;
+            border-width:0px 0px 2px 0px;
+            border-style:solid;
+            border-color:white;
+            outline:none;
+            font-family:'Playfair Display';
+            font-size:14px;
+            font-weight:bold;
+        }
+        .navButton:hover{
+            border-width: 0px 0px 2px 0px;
+            border-color:grey;
+        }
+        .selectedBtn{
+            border-width:0px 0px 2px 0px;
+            border-color:black;
+        }
+        @media screen and(max-width:800px){
+            .navButton{
+                width:25%;
+                font-size:10px;
+                font-weight:bold;
+            }
+        }
+    }
+}

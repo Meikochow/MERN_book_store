@@ -1,0 +1,91 @@
+.Nav{
+    // border:3px solid red;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px 5px 10px;
+    border-style:solid;
+    border-color:#b3b3b3;
+    border-width:0px 0px 1px 0px;
+    .LeftNavContainer{
+        // border:1px solid blue;
+        font-size:32px;
+        font-family:"Nothing You Could Do";
+        cursor: pointer;
+    }
+    .LeftNavContainer :hover{
+        font-weight:bold;
+        text-shadow:0px 2px 1px black;
+    }
+    @media screen and(max-width:800px){
+        .LeftNavContainer{
+            font-size:24px;
+        }
+        @media screen and(max-width:400px){
+            .LeftNavContainer{
+                font-size:18px;
+            }
+        }
+
+    }
+    .RightNavContainer{
+        // border:1px solid green;
+        height:38px;
+        font-size:30px;
+        position:relative;
+        margin:0px 10px 0px 0px;
+        // transform: rotateZ(90deg);
+        // z-index:9999;
+        .User{
+            height:30px;
+            z-index:1;
+            margin:0px 20px 0px 0px;
+        }
+        .Cart{
+            height:18px;
+            width:18px;
+            // border:1px solid red;
+            position:absolute;
+            bottom:6px;
+            right:0;
+        }
+        .CartContents{
+            // border:1px solid red;
+            font-size:12px;
+            width:16px;
+            position:absolute;
+            top:0;
+            right:0;
+            color:green;
+            font-family: 'Merriweather';
+        }
+    }
+    .RightNavContainer:hover{
+        // border:1px solid red;
+        .User{
+            animation: hoverUser 1.5s  both;
+        }
+        
+        // border-radius:50%;
+
+    }
+    @keyframes hoverUser{
+          0% {
+            transform:translate(0px,0px);
+          }
+          10%{
+            transform:translate(0px,-6px);
+          }
+        //   14% {
+        //     transform:translate(0px,0px);
+        //   }
+          18% {
+           transform:translate(0px,2px);
+          }
+          20%{
+            transform:translate(0px,0px);
+        
+          }
+    }
+}
