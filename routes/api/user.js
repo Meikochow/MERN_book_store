@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 //user Model
-const User = require('../../models/user');
-const Item = require('../../models/item');
+const User = require('../../models/User');
+const Item = require('../../models/Item');
 
 //@route GET api/user
 //@desc Get user Data without checking the credentials
